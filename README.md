@@ -18,13 +18,16 @@ Este projeto tem como objetivo automatizar o preenchimento e validação de um f
 ```
 cypress/
 ├── e2e/
-│   └── formulario/
-│       └── formulario_completo.cy.js      # Teste com lógica Gherkin
-├── fixtures/
-│   └── teste_teste.jpg                    # Imagem usada no upload
+│   ├── formulario_enxuto.cy.js         # Versão otimizada do teste de formulário
+│   ├── formulario.cy.js                # Versão completa do teste de formulário
+│   └── login.cy.js                     # Testes relacionados à área de login (futuro)
+├── fixtures/                           # Arquivos simulados (ex: imagens para upload)
 ├── support/
-│   └── commands.js                        # Comandos customizados do Cypress
-│   └── e2e.js                             # Import dos comandos
+│   ├── commands.js                     # Comandos customizados reutilizáveis
+│   └── e2e.js                          # Configurações globais dos testes
+cypress.config.js                       # Configuração principal do Cypress
+package.json                            # Dependências e scripts do projeto
+README.md                               # Documentação do projeto
 ```
 
 ---
