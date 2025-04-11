@@ -23,6 +23,7 @@ it("Login com Sucesso" , ()=> {
     cy.get("Logged In Successfully").should.('bevisibe')
 })
 
+
 //cenários
 it("Logout com Sucesso" , ()=> {
     //Given
